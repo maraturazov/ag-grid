@@ -1,0 +1,15 @@
+<ag-grid-angular
+  #agGrid
+  style="width: calc(100vw - 25px); height: calc(100vh - 14px);"
+  class="ag-theme-balham"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColDef"
+  [rowData]="rowData"
+  [suppressRowClickSelection]="true"
+  [rowSelection]="rowSelection"
+  [getRowHeight]="getRowHeight"
+  [frameworkComponents]="frameworkComponents"
+  [sideBar]="sideBar"
+  (gridReady)="onGridReady($event)"
+>
+</ag-grid-angular>
