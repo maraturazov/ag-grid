@@ -102,6 +102,5 @@ export class MyGridApplicationComponent implements OnInit {
   toggleSelectionMode() {
     this.checkboxVisibility = !this.checkboxVisibility;
     this.gridColumnApi.setColumnVisible('checkbox', this.checkboxVisibility);
-    console.log(this.toolPanelComponent);
   }
 }

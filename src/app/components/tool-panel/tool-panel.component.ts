@@ -13,7 +13,6 @@ export class ToolPanelComponent implements IToolPanel {
   constructor() { }
 
   agInit(params: IToolPanelParams): void {
-    console.log('agInit call', this.agInit);
     this.params = params;
     this.params.api.addEventListener('modelUpdated', this.updateTotals.bind(this));
     this.params.api.addEventListener('selectionChanged', this.updatedSelectedRecords.bind(this));
